@@ -39,3 +39,12 @@ mysql> describe employee_payroll;
 | start  | date         | NO   |     | NULL    |                |
 +--------+--------------+------+-----+---------+----------------+
 4 rows in set (0.06 sec) 
+
+//UC3 Ability to insert values to the "employee_service" table.
+
+mysql> insert into employee_payroll (name, salary, start) values 
+			      ('Bill', 1000000.00, '2018-01-03'),
+			      ('Terisa', 2000000.00, '2019-11-13'), 
+			      ('Charlie', 3000000.00, '2020-05-21');
+Query OK, 3 rows affected (0.17 sec)
+Records: 3  Duplicates: 0  Warnings: 0
